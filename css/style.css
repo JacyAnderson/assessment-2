@@ -16,20 +16,38 @@ body {/*landing page body*/
 /*controls styling for main content div*/
 .landingContent {
 	margin: 0 auto;
+	-webkit-animation: zoomIn 10s 1;
+}
+@-webkit-keyframes zoomIn {
+	0% {
+		-webkit-transform: scale(.7);
+		opacity: 0;
+	}
+	100%{
+		-webkit-transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes spinOut {
+	ß
 }
 /*styles main heading*/
 .landingPage h1 {
-	margin: 220px 0 13px 0;
-	padding-top: 15px;
-	font-size: 90px;
+	height: 100%;
+	margin: 0 auto;
+	margin-top: 68px;
+	padding-top: 35px;
+	font-size: 70px;
 	font-weight: 700;
 	color: #222;
-	text-shadow: 2px 2px 2px #D6C59F;
+	text-shadow: 3px 2px 2px #D6C59F;
 }
 /*styles subheading*/
 .landingPage h2 {
 	font-weight: 100;
 	margin-bottom: 25px;
+	padding: 0 10px;
 }
 /*styles 'play now' button*/
 .playGameBtn {
@@ -38,7 +56,20 @@ body {/*landing page body*/
 	text-transform: uppercase;
 	padding: 5px 25px;
 	background: #222;
-	margin: 20px 0 195px 0;
+	margin: 20px 0 180px 0;
 	border-radius: 5px;
 }
-@media (max-width: 992px)
+.playGameBtn:hover {
+	background-color: rgba(30, 30, 30, 0.7);
+}
+
+@media (min-width: 600px) {
+	.landingPage h1 {
+	margin: 220px 0 13px 0;
+	padding-top: 15px;
+	font-size: 90px;
+	font-weight: 700;
+	color: #222;
+	text-shadow: 2px 2px 2px #D6C59F;
+}
+}
