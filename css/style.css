@@ -1,0 +1,44 @@
+/*LANDING PAGE STYLES*/
+* {
+	font-family: 'Cinzel', serif;
+	color: #D6C59F;
+}
+body {/*landing page body*/
+	text-align: center;
+	background: url("../images/darktower.jpg");
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+}
+/*controls styling for main content div*/
+.landingContent {
+	margin: 0 auto;
+}
+/*styles main heading*/
+.landingPage h1 {
+	margin: 220px 0 13px 0;
+	padding-top: 15px;
+	font-size: 90px;
+	font-weight: 700;
+	color: #222;
+	text-shadow: 2px 2px 2px #D6C59F;
+}
+/*styles subheading*/
+.landingPage h2 {
+	font-weight: 100;
+	margin-bottom: 25px;
+}
+/*styles 'play now' button*/
+.playGameBtn {
+	font-size: 40px;
+	border: 2px solid #000;
+	text-transform: uppercase;
+	padding: 5px 25px;
+	background: #222;
+	margin: 20px 0 195px 0;
+	border-radius: 5px;
+}
+@media (max-width: 992px)
