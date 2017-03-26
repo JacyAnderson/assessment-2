@@ -1,0 +1,17 @@
+/* GAME PAGE STYLING*/
+
+/*Roland (player one) and Walter (player two) DIVS*/
+
+.roland, .walter {
+position: relative;
+}
+
+/*styles both player one and player two IMAGES)*/
+.playerOne, .playerTwo {
+	height: 250px;
+	width: 160px;
+	position: absolute;
+}
+
+
+

@@ -62,6 +62,7 @@ body {/*landing page body*/
 	margin: 20px 0 180px 0;
 	border-radius: 5px;
 }
+/*removes underline from link*/
 .playGameBtn a {
 		text-decoration: none;
 }
