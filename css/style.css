@@ -1,7 +1,8 @@
 /*LANDING PAGE STYLES*/
+/*controls overall page qualities*/
 * {
 	font-family: 'Cinzel', serif;
-	color: #D6C59F;
+	color: #d6c59f;
 }
 body {/*landing page body*/
 	text-align: center;
@@ -18,6 +19,8 @@ body {/*landing page body*/
 	margin: 0 auto;
 	-webkit-animation: zoomIn 10s 1;
 }
+
+/*animation to fade in main page content*/
 @-webkit-keyframes zoomIn {
 	0% {
 		-webkit-transform: scale(.7);
@@ -28,10 +31,10 @@ body {/*landing page body*/
 		opacity: 1;
 	}
 }
-
+/*TODO(add animation to spin out page content on button click)*/
 @-webkit-keyframes spinOut {
-	ß
 }
+
 /*styles main heading*/
 .landingPage h1 {
 	height: 100%;
@@ -41,7 +44,7 @@ body {/*landing page body*/
 	font-size: 70px;
 	font-weight: 700;
 	color: #222;
-	text-shadow: 3px 2px 2px #D6C59F;
+	text-shadow: 3px 2px 2px #d6c59f;
 }
 /*styles subheading*/
 .landingPage h2 {
@@ -59,10 +62,16 @@ body {/*landing page body*/
 	margin: 20px 0 180px 0;
 	border-radius: 5px;
 }
+.playGameBtn a {
+		text-decoration: none;
+}
+/*adds hover quality to change button color*/
 .playGameBtn:hover {
 	background-color: rgba(30, 30, 30, 0.7);
 }
 
+/*MEDIA QUERIES*/
+/*I have started with a mobile first design, and the below functions will change the design as the page width is widened*/
 @media (min-width: 600px) {
 	.landingPage h1 {
 	margin: 220px 0 13px 0;
@@ -70,6 +79,6 @@ body {/*landing page body*/
 	font-size: 90px;
 	font-weight: 700;
 	color: #222;
-	text-shadow: 2px 2px 2px #D6C59F;
+	text-shadow: 2px 2px 2px #d6c59f;
 }
 }
