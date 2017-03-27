@@ -31,10 +31,6 @@ html {
 	}
 }
 
-/*TODO(add animation to spin out page content on button click)*/
-@-webkit-keyframes spinOut {
-}
-
 /*styles main heading*/
 .landingPage h1 {
 	height: 100%;

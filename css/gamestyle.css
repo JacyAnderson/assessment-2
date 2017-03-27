@@ -1,8 +1,8 @@
 /* GAME PAGE STYLING*/
 
-/*Roland (player one) and Walter (player two) DIVS*/
+/* Roland (player one) and Walter (player two) DIVS*/
 
-/*.roland, .walter {
+/* .roland, .walter {
 position: relative;
 }*/
 
@@ -30,12 +30,30 @@ h2 {
   margin: 5px 0 0 20px;
 }
 
-/*styles both player one and player two IMAGES)*/
+/* styles both player one and player two IMAGES)*/
 .playerOne, .playerTwo {
   height: 250px;
   width: 160px;
   position: absolute;
+  -webkit-animation: zoomInSlideIn 2s 1;
 }
+
+/* animation to fade in players*/
+@-webkit-keyframes zoomInSlideIn {
+  0% {
+	-webkit-transform: scale(.7);
+	opacity: 0;
+	transform: translate(0px, 80px);
+  }
+
+
+  100%{
+	-webkit-transform: scale(1);
+	opacity: 1;
+	transform: translate(0px, 0px);
+  }
+}
+
 
 
 .walter {
