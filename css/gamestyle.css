@@ -2,9 +2,9 @@
 
 /*Roland (player one) and Walter (player two) DIVS*/
 
-.roland, .walter {
+/*.roland, .walter {
 position: relative;
-}
+}*/
 
 /*styles both player one and player two IMAGES)*/
 .playerOne, .playerTwo {
@@ -13,5 +13,13 @@ position: relative;
 	position: absolute;
 }
 
+
+.walter {
+	bottom: 0;
+}
+
+.playerTwo {
+	bottom: 0;
+}
 
 
