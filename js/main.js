@@ -1,59 +1,79 @@
-// function that loks to console if the "a key is pressed
-
-// function checkKeyPressed(e) {
-// 	if (e.keyCode == "65") {
-// 		console.log("The 'a' key is pressed");
-// 	}
-// }
-// // listens for the a key being pressed 
-// window.addEventListener("keydown", checkKeyPressed, false);
-
-
-
-var roland = document.getElementsByClassName('playerOne');
+const roland = document.getElementsByClassName('playerOne');
 console.log(roland);
 
-//listens for the keydown events and tries to run the movePlayerOne function
-//switch function that responds to keydown
-window.addEventListener("keydown", function moveWalter(e){
-	switch (e.keyCode) {
-	  case 37: //left key
-	  	  console.log('left key pressed');
-	    break;
-	  case 38: // up key
-	  	  function upPressed() {
-		    document.querySelector('.playerTwo').style.bottom = 30 + "px";
-		  }
-		  upPressed();
-	  	  console.log('up key pressed');
-	  	break;
-	  case 39: // right key
+/**
+* listens for the keydown events and tries to run the movePlayerOne function
+* TODO figure out how the fuck to add pixels to style.bottom everytime function runs
+*/
+window.addEventListener("keydown", function moveWalter(e) {
 
-	  	break;
-	  case 40: // down key
-	  	  console.log('down key pressed');
+	// Switch function that listens for keys "up", "left", "down", "right"
+	switch (e.keyCode) {
+
+	  // left key
+	  case 37: { 
+	  	console.log('left key pressed');
 	    break;
+	  }
+
+	  // up key
+	  case 38: {
+	  	function upPressed() {
+		  document.querySelector('.playerTwo').style.bottom = 30 + "px";
+		}
+		upPressed();
+	  	console.log('up key pressed');
+	  	break;
+	  }
+
+	  // right key
+	  case 39: { 
+	  	break;
+	  }
+
+	  // down key
+	  case 40: { 
+	  	console.log('down key pressed');
+	    break;
+	  }
 	}
 });
-window.addEventListener("keydown", function moveRoland(e){
+
+
+// TODO figure out how the fuck to add pixels to style.bottom everytime function runs
+window.addEventListener("keydown", function moveRoland(e) {
+
+	// Switch function that listens for keys "W", "A", "S", "D"
 	switch (e.keyCode) {
-	  case 87: //w key
+
+	  // w key
+	  case 87: {
 	  	function upPressed() {
 		  document.querySelector('.playerOne').style.bottom = 30 + "px";
-		  }
-		 upPressed();
+		}
+		upPressed();
 	  	console.log('w key pressed');
 	    break;
-	  case 65: // a key
+	  }
+	  
+	  // a key
+	  case 65: {
 	  	console.log('a key pressed');
 	  	break;
-	  case 68: // d key
+	  }
+	  
+	  // d key
+	  case 68: { 
 	    console.log('d key pressed');
 	  	break;
-	  case 83: // s key
+	  }
+	 
+	  // s key
+	  case 83: {
 	  	  console.log('s key pressed');
 	    break;
+	  }
 	}
 });
-//function that is called in the movePlayerOne function when the right key is pressed
+
 

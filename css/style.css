@@ -30,6 +30,7 @@ html {
 		opacity: 1;
 	}
 }
+
 /*TODO(add animation to spin out page content on button click)*/
 @-webkit-keyframes spinOut {
 }
@@ -45,12 +46,14 @@ html {
 	color: #222;
 	text-shadow: 3px 2px 2px #d6c59f;
 }
+
 /*styles subheading*/
 .landingPage h2 {
 	font-weight: 100;
 	margin-bottom: 25px;
 	padding: 0 10px;
 }
+
 /*styles 'play now' button*/
 .playGameBtn {
 	font-size: 40px;
@@ -61,9 +64,11 @@ html {
 	margin: 20px 0 180px 0;
 	border-radius: 5px;
 }
+
 .playGameBtn a {
 	text-decoration: none;
 }
+
 /*adds hover quality to change button color*/
 .playGameBtn:hover {
 	background-color: rgba(30, 30, 30, 0.7);
