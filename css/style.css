@@ -4,16 +4,15 @@
 	font-family: 'Cinzel', serif;
 	color: #d6c59f;
 }
-body {/*landing page body*/
-	text-align: center;
-	background: url("../images/darktower.jpg");
-	background-size: cover;
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-color: black;
-	width: 100%;
-	height: 100%;
+html { 
+  background: url("../images/darktower.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
 }
+
 /*controls styling for main content div*/
 .landingContent {
 	margin: 0 auto;
@@ -62,9 +61,8 @@ body {/*landing page body*/
 	margin: 20px 0 180px 0;
 	border-radius: 5px;
 }
-/*removes underline from link*/
 .playGameBtn a {
-		text-decoration: none;
+	text-decoration: none;
 }
 /*adds hover quality to change button color*/
 .playGameBtn:hover {

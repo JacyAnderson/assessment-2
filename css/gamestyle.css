@@ -6,20 +6,45 @@
 position: relative;
 }*/
 
+html { 
+  background: url("../images/tdt.gif") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+	font-family: 'Cinzel', serif;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #d6c59f;
+  text-shadow: 1px 1px 0 #666;
+  background: #222;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px 15px;
+  margin: 5px 0 0 20px;
+}
+
 /*styles both player one and player two IMAGES)*/
 .playerOne, .playerTwo {
-	height: 250px;
-	width: 160px;
-	position: absolute;
+  height: 250px;
+  width: 160px;
+  position: absolute;
 }
 
 
 .walter {
-	bottom: 0;
+  bottom: 0;
 }
 
 .playerTwo {
-	bottom: 0;
+  bottom: 0;
+  left: 200;
 }
 
 
